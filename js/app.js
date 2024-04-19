@@ -8,10 +8,36 @@ document.querySelector('.share')
             ever.style.paddingBottom = "20px";
             const lastsection = document
                 .querySelector('.lastsection');
-            lastsection.style.width = "100%";
-            lastsection.style.justifyContent = "center";
-            lastsection.style.background = "var(--VeryDarkGrayishBlue)";
-            const pshare = document
+            const width = innerWidth;
+            if (width < 992) {
+                lastsection.style.width = "100%";
+                lastsection.style.justifyContent = "center";
+                lastsection.style.background = "var(--VeryDarkGrayishBlue)";
+                const pshare = document
+                    .querySelector('.pshare');
+                pshare.style.display = "block";
+                const leftside = document
+                    .querySelector('.leftside');
+                leftside.style.display = "none";
+                const lefticons = document
+                    .querySelector('.lefticons');
+                lefticons.style.display = "block";
+                const share = document
+                    .querySelector('.share');
+                share.style.background = "hsl(211, 38%, 87%)";
+            } else {
+                const double = document
+                    .querySelector('.double');
+                double.style.display = "block";
+                const dshare = document
+                    .querySelector('.dshare');
+                
+                share.style.display = "none";
+                lastsection.style.position = "absolute";
+                lastsection.style.width = "20%";
+                lastsection.style.justifyContent = "center";
+                lastsection.style.background = "var(--VeryDarkGrayishBlue)";
+                const pshare = document
                 .querySelector('.pshare');
             pshare.style.display = "block";
             const leftside = document
@@ -22,19 +48,9 @@ document.querySelector('.share')
             lefticons.style.display = "block";
             const share = document
                 .querySelector('.share');
-            share.style.background = "hsl(211, 38%, 87%)";
+                share.style.display = "none";
+            }
         } else {
-            const lastsection = document
-                .querySelector('.lastsection');
-            lastsection.style.width = "85%";
-            lastsection.style.justifyContent = "left";
-            lastsection.style.background = "white";
-            const leftside = document
-                .querySelector('.leftside');
-            leftside.style.display = "block";
-            leftside.style.display = "flex";
-            const pshare = document
-                .querySelector('.pshare');
-            pshare.style.display = "none";
+            window.location.href = "./index.html";
         }
     })
