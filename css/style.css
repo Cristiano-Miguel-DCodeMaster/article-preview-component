@@ -150,6 +150,14 @@ section {
 		transition: transform 1s;
 	}
     .double{
+        display: flex;
+		align-items: center;
+		width: 85%;
+		gap: 30px;
+		padding-top: 15px;
+		padding-bottom: 20px;
+		border-radius: 0 0 10px 10px;
+		justify-content: space-between;
         display: none;
     }
 }
@@ -243,6 +251,14 @@ section {
 		transition: transform 1s;
 	}
     .double{
+        display: flex;
+		align-items: center;
+		width: 85%;
+		gap: 30px;
+		padding-top: 15px;
+		padding-bottom: 20px;
+		border-radius: 0 0 10px 10px;
+		justify-content: space-between;
         display: none;
     }
 }
@@ -290,6 +306,10 @@ section {
 		padding-top: 25px;
 		justify-content: space-between;
 	}
+    .double{
+        padding-top: 25px;
+		justify-content: space-between;
+    }
 }
 @media only screen and (min-width: 768px) {
 	section {
@@ -333,6 +353,12 @@ section {
 		padding-top: 40px;
 		padding-bottom: 20px;
 	}
+    .double{
+        width: 85%;
+		gap: 30px;
+		padding-top: 40px;
+		padding-bottom: 20px;
+    }
 	.date {
 		font-size: 13px;
 	}

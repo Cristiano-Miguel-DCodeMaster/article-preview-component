@@ -29,13 +29,13 @@ document.querySelector('.share')
                 const double = document
                     .querySelector('.double');
                 double.style.display = "block";
-                const dshare = document
-                    .querySelector('.dshare');
-                
-                share.style.display = "none";
                 lastsection.style.position = "absolute";
                 lastsection.style.width = "20%";
                 lastsection.style.justifyContent = "center";
+                lastsection.style.paddingTop = "17px";
+                lastsection.style.borderRadius = "17px";
+                lastsection.style.marginLeft = "567px";
+                lastsection.style.marginTop = "67px";
                 lastsection.style.background = "var(--VeryDarkGrayishBlue)";
                 const pshare = document
                 .querySelector('.pshare');
