@@ -127,7 +127,7 @@ section {
 		font-size: 15px;
 		font-weight: 500;
 	}
-	.share {
+	.share,.dshare {
 		background-color: var(
 			--LightGrayishBlue
 		);
@@ -154,7 +154,6 @@ section {
 		align-items: center;
 		width: 85%;
 		gap: 30px;
-		padding-top: 15px;
 		padding-bottom: 20px;
 		border-radius: 0 0 10px 10px;
 		justify-content: space-between;
@@ -227,7 +226,7 @@ section {
 		font-size: 15px;
 		font-weight: 500;
 	}
-	.share {
+	.share,.dshare {
 		background-color: var(
 			--LightGrayishBlue
 		);
@@ -251,14 +250,11 @@ section {
 		transition: transform 1s;
 	}
     .double{
-        display: flex;
 		align-items: center;
 		width: 85%;
 		gap: 30px;
-		padding-top: 15px;
 		padding-bottom: 20px;
 		border-radius: 0 0 10px 10px;
-		justify-content: space-between;
         display: none;
     }
 }
@@ -352,6 +348,28 @@ section {
 		gap: 30px;
 		padding-top: 40px;
 		padding-bottom: 20px;
+	}
+	.lastsection::before{
+		content: '';
+		position: absolute;
+		width: 20%;
+		justify-content: center;
+		padding-top: 17px;
+		border-radius: 17px;
+		margin-left: 407px;
+		margin-top: 27px;
+		background: var(--VeryDarkGrayishBlue);
+	}
+	.lastsection::after{
+		content: '';
+		position: absolute;
+		width: 20%;
+		justify-content: center;
+		padding-top: 17px;
+		border-radius: 17px;
+		margin-left: 407px;
+		margin-top: 67px;
+		background: var(--VeryDarkGrayishBlue);
 	}
     .double{
         width: 85%;

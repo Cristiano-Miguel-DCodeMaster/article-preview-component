@@ -29,6 +29,9 @@ document.querySelector('.share')
                 const double = document
                     .querySelector('.double');
                 double.style.display = "block";
+                double.style.display = "flex";
+                double.style.justifyContent = "space-between";
+                double.style.paddingTop = "0";
                 lastsection.style.position = "absolute";
                 lastsection.style.width = "20%";
                 lastsection.style.justifyContent = "center";
