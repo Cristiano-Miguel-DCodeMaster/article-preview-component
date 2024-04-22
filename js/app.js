@@ -36,10 +36,12 @@ document.querySelector('.share')
                 lastsection.style.width = "20%";
                 lastsection.style.justifyContent = "center";
                 lastsection.style.paddingTop = "17px";
-                lastsection.style.borderRadius = "17px";
-                lastsection.style.marginLeft = "567px";
-                lastsection.style.marginTop = "67px";
+                lastsection.style.borderRadius = "13px";
+                lastsection.style.marginLeft = "550px";
+                lastsection.style.marginTop = "80px";
                 lastsection.style.background = "var(--VeryDarkGrayishBlue)";
+                const dright = document.querySelector('.dright');
+                dright.style.display = "block";
                 const pshare = document
                 .querySelector('.pshare');
             pshare.style.display = "block";
@@ -52,6 +54,11 @@ document.querySelector('.share')
             const share = document
                 .querySelector('.share');
                 share.style.display = "none";
+            document.querySelector('.dshare').addEventListener('click', () => {
+                if (!(counter % 2) == 0) {
+                    window.location.href = "./index.html";
+                }
+                })
             }
         } else {
             window.location.href = "./index.html";
