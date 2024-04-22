@@ -427,6 +427,19 @@ section {
 	.ever {
 		font-size: 16px;
 	}
+	.lastsection{
+		padding-top: 30px;
+	}
+	.dright{
+		position: absolute;
+		width: 2%;
+		justify-content: center;
+		padding-top: 17px;
+		margin-left: 410px;
+		margin-top: 132px;
+		background: var(--VeryDarkGrayishBlue);
+		transform: rotate(-45deg);
+	}
 }
 @media only screen and (min-width: 1024px) and (min-height: 1100px) {
 	.leftimg {
@@ -452,6 +465,9 @@ section {
 	}
 	.ever {
 		font-size: 20px;
+	}
+	.dright{
+		margin-left: 510px;
 	}
 }
 @media only screen and (min-width:1272px) and (min-height:645px){
@@ -497,6 +513,39 @@ section {
     .share{
         width: 4%;
         height: 3vh;
+    }
+    h2 {
+		font-size: 19px;
+	}
+	.date {
+		font-size: 17px;
+	}
+	.dright{
+		margin-left: 595px;
+	}
+}
+@media only screen and (min-width: 1440px) and (min-height: 1200px) {
+	.leftimg {
+		height: 35vh;
+		width: 40%;
+	}
+	.right {
+		height: 35vh;
+		width: 60%;
+	}
+	h1 {
+		font-size: 34px;
+	}
+	.ever {
+		font-size: 22px;
+	}
+    .Michelle{
+        width: 55px;
+        height: 55px;
+    }
+    .share{
+        width: 4%;
+        height: 2vh;
     }
     h2 {
 		font-size: 19px;

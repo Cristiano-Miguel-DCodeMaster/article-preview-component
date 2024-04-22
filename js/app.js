@@ -54,6 +54,15 @@ document.querySelector('.share')
             const share = document
                 .querySelector('.share');
                 share.style.display = "none";
+                if (innerWidth >= 1024 && innerHeight >= 600) {
+                    lastsection.style.marginLeft = "380px";
+                } if (innerWidth >= 1200 && innerHeight >= 600) {
+                    lastsection.style.marginLeft = "490px";
+                } if (innerWidth >= 1272 && innerHeight >= 645) {
+                    lastsection.style.marginLeft = "520px";
+                } if (innerWidth >= 1440 && innerHeight >= 600) {
+                    lastsection.style.marginLeft = "550px";
+                } 
             document.querySelector('.dshare').addEventListener('click', () => {
                 if (!(counter % 2) == 0) {
                     window.location.href = "./index.html";
